@@ -4,9 +4,9 @@ import IndecisionApp from './components/IndecisionApp';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 import ReactModal from 'react-modal';   
-ReactModal.setAppElement('#app');
+//ReactModal.setAppElement('#app');
  
-ReactDOM.render(<IndecisionApp />,document.getElementById('app'));
+ReactDOM.render(<p>hello</p>, document.getElementById('app'));
 
 
   

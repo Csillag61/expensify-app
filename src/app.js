@@ -1,30 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter, Route} from 'react-router-dom';
+import AppRouter from './routers/AppRouter';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
-const ExpenseDashboardPage = ()=>(
-    <div>
-    dasboard
-    </div>
-)
-const AddExpensePage = ()=>(
-    <div>
-    add expense dasboard
-    </div>
-)
 
-const routes = (
-    <BrowserRouter>
-    <div>
-        <Route path="/" component={ExpenseDashboardPage}/>
-        <Route path="/create" component={AddExpensePage}/>
-        </div>    
-    </BrowserRouter>
-
-);
-ReactDOM.render(routes, document.getElementById('app'));
-
-
-  
-
+ReactDOM.render(<AppRouter />, document.getElementById('app'));
